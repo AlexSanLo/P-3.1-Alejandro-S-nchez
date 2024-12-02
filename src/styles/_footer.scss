@@ -3,52 +3,89 @@
 footer {
     font-family: $typography-font-family-1;
     background-color: $color-secondary-01;
-    height: 202px;
-    
+    height: auto;
+
     section {
         display: flex;
         justify-content: space-between;
-        div {
+        align-items: center;
 
+        @include respond-to("small") {
+            display: block;
+            text-align: center;
+            padding: 4px 0;
+            margin: 0;
+            height: auto;
+        }
 
-            h1 {
-                font-size: $typography-tamano-h2;
-                width: 229px;
-                color: $typography-color-black;
-                text-shadow: 1px 1px 2px rgba(255, 255, 255, 1);
-                margin-bottom: 0;
+        @include respond-to("medium") {
+            display: flex;
+            justify-content: center; 
+            align-items: center;
+            text-align: center; 
+            flex-direction: column; 
 
-                span {
-                color: $typography-color-white;
-                text-shadow: 2px 2px 3px rgb(0, 0, 0);
+            div {
+                @include respond-to("small") {
+                    display: inline-block;
+                    margin-bottom: 10px;
+                    width: 100%;
                 }
-            }
-        }
 
-        div:nth-of-type(2) {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            
-            img {
-                height: 30px;
-                width: 30px;
-            }
+                @include respond-to("medium") {
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
 
-            p {
-                margin-right: 10px;
-            }
-        }
+                h1 {
+                    font-size: $typography-tamano-h2;
+                    width: $width-h1-footer;
+                    color: $typography-color-black;
+                    text-shadow: 1px 1px 2px rgba(255, 255, 255, 1);
+                    margin-bottom: 0;
 
-        div:nth-of-type(3) {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            
-            img {
-                margin-right: 5px;
-                height: 30px;
-                width: 30px;
+                    @include respond-to("small") {
+                        font-size: $typography-tamano-h3;
+                        width: auto;
+                    }
+
+                    @include respond-to("medium") {
+
+                        h1 {
+                            font-size: $typography-tamano-h4;
+                            margin: 0;
+                            width: auto;
+                        }
+
+                        span {
+                            color: $typography-color-white;
+                            text-shadow: 2px 2px 3px rgb(0, 0, 0);
+                        }
+                    }
+                }
+
+                div:nth-of-type(2),
+                div:nth-of-type(3) {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    img {
+                        margin-right: 5px;
+                        height: 30px;
+                        width: 30px;
+                    }
+
+                    @include respond-to("small") {
+                        justify-content: center;
+
+                        img {
+                            margin-right: 10px;
+                        }
+                    }
+                }
             }
         }
     }

@@ -4,25 +4,85 @@
 header {
     background-image: url(../assets/imgs/FotoHeader.jpg);
     background-size: cover;
-    display: flex;
     height: $height-header;
-    justify-content: center; 
-    align-items: center; 
-    
-    p {
-        margin-top: 0;
-        font-size: $typography-tamano-h2;
-        color: $typography-color-black;
-        text-shadow: 1px 1px 2px rgba(255, 255, 255, 1);
-        width: 20rem;
-        padding-top: 30px;
-        font-family: $typography-font-family-2;
-        
-        span {
-            color: $typography-color-brown;
-            font-size: $typography-tamano-h1;
-        }
+
+    @include respond-to ("small") {
+        height: 170px;
     }
 
+    section {
+        display: flex;
 
+        div:nth-of-type(2) {
+            display: flex;
+            align-items: center;
+            width: 80%;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+
+            @include respond-to ("small") {
+                display: block;
+            }
+            
+            ul {
+                list-style: none;
+
+                li {
+                    
+                    @include respond-to ("small") {
+                        width: 5rem;
+                    }
+
+                    img {                   
+                        @include respond-to ("small") {
+                            height: 15px;
+                            width: 15px;
+                        }
+                        
+    
+                    }
+    
+                    a {
+                        text-decoration: none;
+                        color: $typography-color-white;
+                        font-size: $typography-tamano-h4;
+                        font-family: $typography-font-family-1;
+                        font-weight: $typography-peso-bold;
+                        margin-right: 20px;
+    
+                        @include respond-to ("small") {
+                            font-size: $typography-tamano-small;
+                            margin-right: 0px;
+                            
+                        }
+
+                        @include respond-to ("medium") {
+                            font-size: $typography-tamano-paragraph;
+                            margin-right: 20px;
+                            
+                        }
+
+                        
+                    }                   
+                }
+            }   
+        }
+
+        p {
+            margin-top: 0;
+            font-size: $typography-tamano-h2;
+            color: $typography-color-black;
+            text-shadow: 1px 1px 2px rgba(255, 255, 255, 1);
+            width: 20rem;
+            padding-top: 30px;
+            font-family: $typography-font-family-2;
+            
+            span {
+                color: $typography-color-brown;
+                font-size: $typography-tamano-h1;
+            }
+        }
+    }
 }
+

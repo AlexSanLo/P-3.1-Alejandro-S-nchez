@@ -1,0 +1,191 @@
+@use "globals" as *;
+
+main {
+    margin: 0 auto;
+    padding-top: $padding-top-main;
+    margin-bottom: $margin-botton-main;
+
+    section:first-of-type {
+        display: flex;
+        margin-bottom: $margin-bottom-section;
+
+        @include respond-to ("small") {
+            display: inline-block;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+        }
+
+        
+        @include respond-to ("medium") {
+            display: inline-block;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+        }
+
+
+        div {
+
+            img {
+
+                margin-right: $margin-right-img;
+                margin-left: $margin-left-img;
+                
+
+                @include respond-to ("small") {
+                   height: $height-img-small;
+                   width: $width-img-small;
+                }
+            }
+
+            hr {
+                float: right;
+                height: $height-hr;
+                width: $width-main-section;
+                background-color: $color-primary;
+
+                @include respond-to ("small") {
+                    height: $height-hr;
+                    width: $width-hr;
+                    float: none;
+                }
+
+                @include respond-to ("medium") {
+                    height: $height-hr;
+                    width: 200px;
+                    float: none;
+                }
+            }
+
+            h1 { 
+                float: right;
+                font-family: $typography-font-family-1;
+                font-size: $typography-tamano-h1; 
+                margin-bottom: 0;
+                margin-top: 0;
+
+                @include respond-to ("small") {
+                    font-size: $typography-tamano-h3;
+                    float: none;
+                }
+
+                @include respond-to ("medium") {
+                    font-size: $typography-tamano-h2;
+                    float: none;
+                }
+                
+            }
+
+            p {
+                float: right;
+                font-family: $typography-font-family-1;
+                font-size: $typography-tamano-paragraph;
+                width: $width-main-section;
+
+                @include respond-to ("small") {
+                    float: none;
+                    font-size: $typography-tamano-small;
+                    width: $width-p-small;
+                 }
+            }
+        }
+    }
+
+    section:nth-of-type(2) {
+        display: flex;
+        margin-bottom: 20px;
+
+        @include respond-to ("small") {
+            display: inline-block;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+        }
+
+        @include respond-to ("medium") {
+            display: inline-block;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+        }
+
+        div {
+
+            img {
+                margin-right: $margin-right-img;
+                margin-left: $margin-left-img;
+
+                @include respond-to ("small") {
+                    height: $height-img-small;
+                    width: $width-img-small;
+                 }
+            }
+
+            hr {
+                float: left;
+                height: $height-hr;
+                width: $width-main-section;
+                background-color: $color-primary;
+                @include respond-to ("small") {
+                    height: $height-hr;
+                    width: $width-hr;
+                    float: none;
+                }
+
+                @include respond-to ("medium") {
+                    height: $height-hr;
+                    width: 200px;
+                    float: none;
+                }
+            }
+
+            h1 { 
+                float: left;
+                font-family: $typography-font-family-1;
+                font-size: $typography-tamano-h1; 
+                margin-bottom: 0;
+                margin-top: 0;
+                
+                @include respond-to ("small") {
+                    font-size: $typography-tamano-h3;
+                        float: none;
+                }
+
+                @include respond-to ("medium") {
+                    font-size: $typography-tamano-h2;
+                        float: none;
+                }
+            }
+
+            p {
+                float: left;
+                font-family: $typography-font-family-1;
+                font-size: $typography-tamano-paragraph;
+                width: $width-main-section;
+
+                @include respond-to ("small") {
+                    float: none;
+                    font-size: $typography-tamano-small;
+                    width: $width-p-small;
+                 }
+            }
+        }
+    }
+
+    section:nth-of-type(3) {
+        display: flex;
+
+        div:nth-of-type(2) {
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            width: 80%;
+        }
+
+        img {
+            width: 30px;
+            height: 30px;
+        }
+    }
+}

@@ -24,21 +24,26 @@ $iconos-color-2: #ffffff;
 //Margins
 $margin-right-img: 20px;
 $margin-left-img: 0px;
+$margin-botton-main: 10px;
+$margin-bottom-section: 40px;
 
 //Paddings
-
+$padding-top-main:  20px;
 
 //Widths
 $width-container: 80%;
 $width-main-section: 550px;
-
+$width-img-small: 210px;
+$width-p-small:30rem;
+$width-hr:212px;
+$width-h1-footer: 230px;
 
 //Heights and Weights
 $iconos-h: 1.875rem;
 $iconos-w: 1.875rem;
 $height-header: 187px;
-$height-footer: 202px;
 $height-hr: 9px;
+$height-img-small:126px;
 
 //Font Sizes
 $typography-tamano-small: 0.875rem;
@@ -67,9 +72,4 @@ $typography-peso-bold: Bold;
 $typography-peso-regular: Regular;
 
 
-//BreakPoints
-$breakpoints: (
-  "small": (max-width: 599px,),
-  "medium": (min-width: 600px, max-width: 1199px,),
-  "large": (min-width: 1200px,),
-);
+
