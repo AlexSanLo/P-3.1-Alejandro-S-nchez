@@ -1,0 +1,15 @@
+@use "globals" as *;
+
+.button {
+    width: 130px;
+    height: 40px;
+    background-color: $color-primary;
+    color: $typography-color-white;
+    border: none;
+    margin-bottom: 20px;
+    border-radius: 4px;
+
+    &:hover {
+        background-color: $color-hover;
+    }
+}

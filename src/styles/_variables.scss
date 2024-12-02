@@ -1,1 +1,75 @@
+//BackgroundColors
 $background-color: black;
+$color-disabled: #8a976d;
+$color-hover: #4c422a;
+$color-off: #f2fbff;
+$color-primary: #000000;
+$color-secondary-01: #aeaeae;
+$color-secondary-03: #727272;
+$color-secondary-04: #565656;
+$color-secundary-02: #909090;
+$color-secundary-05: #3a3a3a;
+$color-support-support-01: #8dcc52;
+$color-support-support-02: #f9ea47;
+$color-support-support-03: #f44930;
+$color-support-support-04: #00cffd;
+
+//Colors
+$typography-color-black: #000000;
+$typography-color-brown: #4c422a;
+$typography-color-white: #ffffff;   
+$iconos-color: #000000;
+$iconos-color-2: #ffffff;
+
+//Margins
+$margin-right-img: 20px;
+$margin-left-img: 0px;
+
+//Paddings
+
+
+//Widths
+$width-container: 80%;
+$width-main-section: 550px;
+
+
+//Heights and Weights
+$iconos-h: 1.875rem;
+$iconos-w: 1.875rem;
+$height-header: 187px;
+$height-footer: 202px;
+$height-hr: 9px;
+
+//Font Sizes
+$typography-tamano-small: 0.875rem;
+$typography-tamano-paragraph: 1rem;
+$typography-tamano-h4: 1.5rem;
+$typography-tamano-h3: 2rem;
+$typography-tamano-h2: 2.625rem;
+$typography-tamano-h1: 4.25rem;
+
+//Font family
+$typography-font-family-1: Yaldevi;
+$typography-font-family-2: Vampiro One;
+
+
+//Interlineado
+$typography-interlineado-paragraph: 1.5rem;
+$typography-interlineado-small: 1.5rem;
+$typography-interlineado-h4: 2rem;
+$typography-interlineado-h2: 3rem;
+$typography-interlineado-h3: 3rem;
+$typography-interlineado-h1: 4.5rem;
+
+
+//Font Weight
+$typography-peso-bold: Bold;
+$typography-peso-regular: Regular;
+
+
+//BreakPoints
+$breakpoints: (
+  "small": (max-width: 599px,),
+  "medium": (min-width: 600px, max-width: 1199px,),
+  "large": (min-width: 1200px,),
+);

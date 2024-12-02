@@ -1,0 +1,95 @@
+@use "globals" as *;
+
+main {
+    margin: 0 auto;
+    padding-top: 20px;
+    margin-bottom: 10px;
+
+    section:first-of-type {
+        display: flex;
+        margin-bottom: 40px;
+
+        div {
+
+            img {
+                margin-right: $margin-right-img;
+                margin-left: $margin-left-img;
+            }
+
+            hr {
+                float: right;
+                height: $height-hr;
+                width: $width-main-section;
+                background-color: $color-primary;
+            }
+
+            h1 { 
+                float: right;
+                font-family: $typography-font-family-1;
+                font-size: $typography-tamano-h1; 
+                margin-bottom: 0;
+                margin-top: 0;
+                
+            }
+
+            p {
+                float: right;
+                font-family: $typography-font-family-1;
+                font-size: $typography-tamano-paragraph;
+                width: $width-main-section;
+            }
+        }
+    }
+
+    section:nth-of-type(2) {
+        display: flex;
+        margin-bottom: 20px;
+
+        div {
+
+            img {
+                margin-right: $margin-right-img;
+                margin-left: $margin-left-img;
+            }
+
+            hr {
+                float: left;
+                height: $height-hr;
+                width: $width-main-section;
+                background-color: $color-primary;
+            }
+
+            h1 { 
+                float: left;
+                font-family: $typography-font-family-1;
+                font-size: $typography-tamano-h1; 
+                margin-bottom: 0;
+                margin-top: 0;
+                
+            }
+
+            p {
+                float: left;
+                font-family: $typography-font-family-1;
+                font-size: $typography-tamano-paragraph;
+                width: $width-main-section;
+            }
+        }
+    }
+
+    section:nth-of-type(3) {
+        display: flex;
+
+        div:nth-of-type(2) {
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            width: 80%;
+        }
+
+        img {
+            width: 30px;
+            height: 30px;
+        }
+    }
+}
